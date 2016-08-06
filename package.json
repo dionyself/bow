@@ -1,0 +1,30 @@
+{
+  "name": "bow",
+  "version": "0.1.0",
+  "description": "Wiki and library's inventory",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShailynOrtiz/bow.git"
+  },
+  "keywords": [
+    "wiki",
+    "library"
+  ],
+  "author": "sortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShailynOrtiz/bow/issues"
+  },
+  "homepage": "https://github.com/ShailynOrtiz/bow#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-session": "^2.0.0-alpha.1",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.8",
+    "pug": "^2.0.0-beta4"
+  }
+}
