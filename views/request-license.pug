@@ -1,0 +1,25 @@
+h1 Request license
+
+form(method="POST", action=/request-license)
+	p Name
+		input(type="text", name="name")
+	p Reason
+		input(type="text", name="reason")
+	p Quantity
+		input(type="number", name="quantity")
+	p Project
+		input(type="text", name="project")
+	p Firefighter
+		select(name="firefighter")
+		     option(value="") -- Select a firefighter --
+		     option(value="aneudy") Aneudys Caceres
+		     option(value="amaya") Amaya Almonte
+		     option(value="amelvis") Amelvis 
+		     option(value="alejandra") Alejandra
+		     option(value="karen") Karen
+		     option(value="Lisa") Lisa
+		     option(value="diagmy") Diagmy
+		     option(value="yanilka") Yanilka
+		     option(value="other") Other
+	p 
+		input(type="submit")

@@ -1,0 +1,27 @@
+h1 Request Book
+form(method="POST", action="/request-book")
+	p Book Title
+		input(type="text", name="book-title")
+	p Name
+		input(type="text", name="name")
+	p Project/Office
+		input(type="text", name="project")
+	p Firefighter
+		select(name="firefighter")
+		     option(value="") -- Select a firefighter --
+		     option(value="aneudy") Aneudys Caceres
+		     option(value="amaya") Amaya Almonte
+		     option(value="amelvis") Amelvis 
+		     option(value="alejandra") Alejandra
+		     option(value="karen") Karen
+		     option(value="Lisa") Lisa
+		     option(value="diagmy") Diagmy
+		     option(value="yanilka") Yanilka
+		     option(value="other") Other
+	p Phone
+		input(type="text", name="phone")
+	P
+		input(type="submit")
+
+
+

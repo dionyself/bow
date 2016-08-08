@@ -1,0 +1,30 @@
+h1 Add a Book
+
+form(method="POST", action="/add-book") input(type="hidden", name="_method", value="PUT")
+	p Title
+		input(type="text", name="title")
+	p Author
+ 		input(type="text", name="author")
+	p Media Call
+   		input(type="text", name="media_call")
+ 	p Category
+   		select(name="category")
+		     option(value="") -- Select a category --
+		     option(value="Biography") Biography
+		     option(value="Business") Business
+		     option(value="Dictionaries") Dictionaries
+		     option(value="Finance") Finance
+		     option(value="Human-Resource") Human Resource
+		     option(value="Personal-development") Personal Development
+		     option(value="Programming") Programming
+		     option(value="Technology") Technology
+    p Edition
+   		input(type="text", name="edition")
+ 	p Volume
+  		input(type="text", name="volume")
+ 	p Year
+   		input(type="number", name="year")
+ 	P Pages
+   		input(type="number", name="pages")
+	p
+  		input(type="submit")
