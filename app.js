@@ -34,10 +34,10 @@ app.post("/users",function(req,res){
 	user.save(function(err) {
 		if(err){
 			console.log(String(err));
+		}else{
+			res.redirect("app/profile");			
 		}
-		res.render("app/profile");
 	});
-
 });
 
 app.listen(8080);
