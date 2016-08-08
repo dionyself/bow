@@ -1,12 +1,15 @@
 var express = require("express");
 var User = require("./models/user");
 var bodyParser = require("body-parser");
+var RouterApp = require("./routers/routerApp");
 
 var app = express();
 
 app.use("/public", express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+
+app.use("/app", RouterApp);
 
 app.set("view engine", "pug");
 
