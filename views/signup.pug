@@ -8,7 +8,7 @@ block contenido
 				label(for="email") Email
 				input(type="text", id="email", name="email", placeholder="Email", class="form-control", required)
 			
-			each val in ["Password","Password confirmation"]
+			each val in ["password","password confirmation"]
 				div(class="form-group")
 					label(for=val)=val
 					input(type="Password", id=val, name=val.replace(" ","_"), placeholder=val,  class="form-control", required)
